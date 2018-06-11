@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: Te9O3cumk9yiMbTQwdQGcUT+HxQMmhd65mtvX7SE4pTVu6CvnGVqYWk6PTynZnJol3DssmQArefwzJvehdReHyyZL/8G+Iya69EtSqCyzXzhJ5VuhPiqS2UFo9y9eIYZwlEowGvcW0hk7NnxGTHyBb/GJkVyMdkTiyffuF8aRvjAfWYRfsBcv08R+7acsaOol4Msa9r2mH9I4UWysHfkjIluzYQkJK/tmCRlbilsItkweRP+LEe9whxKa5hFyU5sZo+0o65JlQUyGox2urHTxu7OZ1hYTJp1bsM1aoduPGtiAKJw2yaxufRyWAgRniZtCMqIRRapXZZqtSHrkN+52AnYW6zrPqWsZW6WA1qlVgpSRSgiXktBBhQ66nv0j7uDtPX6xkaMe0hyA9wjMJkV+8AwikiugU/aQc2+B6lEnCDbHr6pUMWEhyj9/XVLSefb/S9juGdcTDveHVSVN6USliNgE78LJMFnuA9Qndd8vWfysFC2R1OKGV/G8GMKaoqIvPe/+qVtMeYwo23biAh+ARihlmhoCG+GvmL1Q3ZOZKaj/7Li5IrCC/ZdwkdyNGPsz2t8v7Ez0Br7ksRqb+cVqp92KQ2Nso5sb99HNMKvhJa/tO734xh1daXabrC21Q149hK/mdxniZ/aVvprPil2CZGXwaPHqR82xzfh4Dhuvjo=
+  app: sleepy-crag-27863
+  on:
+    repo: norkuy/blog-api-mongoose-tests
