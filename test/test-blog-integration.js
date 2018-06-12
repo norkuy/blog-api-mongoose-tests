@@ -124,6 +124,7 @@ describe('POST endpoint', function() {
          .then(function(res) {
              expect(res).to.have.status(201);
              expect(res.body).to.be.a('object');
+             console.log('RES.BODY', res.body);
              expect(res.body).to.include.keys('title', 'author', 'content', 'created');
              return BlogPost.findById(res.body.id);
          })
@@ -132,8 +133,6 @@ describe('POST endpoint', function() {
              expect(newBlog.author.firstName).to.equal(blog.author.firstName);
              expect(newBlog.author.lastName).to.equal(blog.author.lastName);
              expect(newBlog.content).to.equal(blog.content);
-             // date giving different results between newBlog and blog. res.body and blog have the same date.
-            //  expect(newBlog.created).to.equal(blog.created);
          })
     });
 });
